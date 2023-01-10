@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :books
+  resources :directors
   #get("/", { :controller => "movies", :action => "index" })
   #get "/" =>  "movies#index"
   root "movies#index"
